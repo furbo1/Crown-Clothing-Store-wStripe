@@ -1,21 +1,20 @@
 import React from 'react';
 
 import SignIn from '../../components/sign-in/sign-in'
+import SignUp from '../../components/sign-up/sign-up'
 
-class SignInSignUp extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
+import './signin-signup.styles.scss'
 
-        }
+const SignInSignUp = () =>{
+   
+
+    return(
+        <div className='sign-in-sign-up'>
+                <SignIn />
+                <SignUp />
+        </div>
+    )
     }
-    render() {
-        return(
-            <div>
-            <SignIn />
-            </div>
-        )
-    }
-}
+
 
 export default SignInSignUp;
